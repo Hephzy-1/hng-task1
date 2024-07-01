@@ -1,0 +1,16 @@
+{
+  "name": "hng",
+  "version": "1.0.0",
+  "description": "Hng internship stage one task",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hephzy",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "geoip-lite": "^1.4.10"
+  }
+}
