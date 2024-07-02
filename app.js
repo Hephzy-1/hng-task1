@@ -10,7 +10,7 @@ const openWeatherMapApiKey = process.env.WEATHER_SECRET;
 const openWeatherMapApiUrl = 'http://api.openweathermap.org/data/2.5/weather'
 
 app.get('/', (req, res) => {
-  res.json({ message: `Welcome to my API. Please go to /api/hello?visitor_name=your_name` });
+  res.send('Welcome to my API. Please go to /api/hello?visitor_name=your_name');
 });
 
 app.get('/api/hello', async (req, res) => {
