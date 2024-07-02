@@ -7,6 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const openWeatherMapApiKey = process.env.WEATHER_SECRET;
+const openWeatherMapApiUrl = 'http://api.openweathermap.org/data/2.5/weather'
 
 app.get('/', (req, res) => {
   res.json({ message: `Welcome to my API. Please go to /api/hello?visitor_name=your_name` });
@@ -30,7 +31,7 @@ app.get('/api/hello', async (req, res) => {
     const location = geo ? geo.city : 'Unknown';
 
     // Get the weather data
-    const response = await axios.get('http://api.openweathermap.org/data/2.5/weather', {
+    const response = await axios.get(openWeatherMapApiUrl, {
       params: {
         q: location,
         units: 'metric',
