@@ -9,7 +9,7 @@
   "routes": [
       {
           "src": "/api/hello?visitor_name=user",
-          "dest": "/app.js"
+          "dest": "app.js"
       }
   ]
 }
