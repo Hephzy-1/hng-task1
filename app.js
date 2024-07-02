@@ -7,6 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const openWeatherMapApiKey = process.env.WEATHER_SECRET;
+console.log(openWeatherMapApiKey)
 const openWeatherMapApiUrl = 'http://api.openweathermap.org/data/2.5/weather'
 
 app.get('/', (req, res) => {
